@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.902
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication", "WebApplication\WebApplication.csproj", "{A7A92C2E-4E7B-4E43-BE04-0CE809285E8F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication", "WebApplication\WebApplication.csproj", "{A7A92C2E-4E7B-4E43-BE04-0CE809285E8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataCube", "DataCube\DataCube.csproj", "{4765B999-28FF-489C-B3B1-443EEC36EBD3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataCube", "DataCube\DataCube.csproj", "{4765B999-28FF-489C-B3B1-443EEC36EBD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExistingDatabase", "ExistingDatabase\ExistingDatabase.csproj", "{3F3828BC-8929-4645-8C9E-BC1E48BA099C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{4765B999-28FF-489C-B3B1-443EEC36EBD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4765B999-28FF-489C-B3B1-443EEC36EBD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4765B999-28FF-489C-B3B1-443EEC36EBD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F3828BC-8929-4645-8C9E-BC1E48BA099C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F3828BC-8929-4645-8C9E-BC1E48BA099C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F3828BC-8929-4645-8C9E-BC1E48BA099C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F3828BC-8929-4645-8C9E-BC1E48BA099C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
