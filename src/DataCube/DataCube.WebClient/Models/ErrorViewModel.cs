@@ -1,6 +1,6 @@
 using System;
 
-namespace WebApplication.Models
+namespace DataCube.WebClient.Models
 {
     public class ErrorViewModel
     {

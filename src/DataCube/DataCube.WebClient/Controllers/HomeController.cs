@@ -4,9 +4,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using WebApplication.Models;
+using DataCube.WebClient.Models;
 
-namespace WebApplication.Controllers
+namespace DataCube.WebClient.Controllers
 {
     public class HomeController : Controller
     {

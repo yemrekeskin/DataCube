@@ -3,13 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.902
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication", "WebApplication\WebApplication.csproj", "{A7A92C2E-4E7B-4E43-BE04-0CE809285E8F}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataCube", "DataCube\DataCube.csproj", "{4765B999-28FF-489C-B3B1-443EEC36EBD3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExistingDatabase", "ExistingDatabase\ExistingDatabase.csproj", "{3F3828BC-8929-4645-8C9E-BC1E48BA099C}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Tests\Tests.csproj", "{D28029CC-0398-4FF3-B3A8-8DAA3206A44E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blogging", "Blogging\Blogging.csproj", "{ACD2B9A3-4861-4827-BF0E-8FF60F1D3757}"
 EndProject
@@ -21,7 +17,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercises", "Exercises", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modeling", "Modeling", "{8207A1E5-E7D5-42E0-8C30-74E9EDFE1968}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conventions", "Conventions\Conventions.csproj", "{446CA046-B6D3-4284-A0D0-0448EC3035D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Conventions", "Conventions\Conventions.csproj", "{446CA046-B6D3-4284-A0D0-0448EC3035D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataSeeding", "DataSeeding\DataSeeding.csproj", "{6EC46A86-CA25-4CDC-86E9-FC6F0FF6A415}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataCube.Tests", "DataCube.Tests\DataCube.Tests.csproj", "{64DEE75A-5F83-4420-A26D-0ED1A40DCD83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataCube.ConsoleClient", "DataCube.ConsoleClient\DataCube.ConsoleClient.csproj", "{7A213C47-DCE3-4D07-893C-19384ACA3B33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataCube.WebClient", "DataCube.WebClient\DataCube.WebClient.csproj", "{DA552E52-434A-4085-87C2-D84E5B885760}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +33,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A7A92C2E-4E7B-4E43-BE04-0CE809285E8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A7A92C2E-4E7B-4E43-BE04-0CE809285E8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A7A92C2E-4E7B-4E43-BE04-0CE809285E8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A7A92C2E-4E7B-4E43-BE04-0CE809285E8F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4765B999-28FF-489C-B3B1-443EEC36EBD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4765B999-28FF-489C-B3B1-443EEC36EBD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4765B999-28FF-489C-B3B1-443EEC36EBD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -41,10 +41,6 @@ Global
 		{3F3828BC-8929-4645-8C9E-BC1E48BA099C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F3828BC-8929-4645-8C9E-BC1E48BA099C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F3828BC-8929-4645-8C9E-BC1E48BA099C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D28029CC-0398-4FF3-B3A8-8DAA3206A44E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D28029CC-0398-4FF3-B3A8-8DAA3206A44E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D28029CC-0398-4FF3-B3A8-8DAA3206A44E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D28029CC-0398-4FF3-B3A8-8DAA3206A44E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{ACD2B9A3-4861-4827-BF0E-8FF60F1D3757}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{ACD2B9A3-4861-4827-BF0E-8FF60F1D3757}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ACD2B9A3-4861-4827-BF0E-8FF60F1D3757}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -61,6 +57,22 @@ Global
 		{446CA046-B6D3-4284-A0D0-0448EC3035D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{446CA046-B6D3-4284-A0D0-0448EC3035D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{446CA046-B6D3-4284-A0D0-0448EC3035D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EC46A86-CA25-4CDC-86E9-FC6F0FF6A415}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EC46A86-CA25-4CDC-86E9-FC6F0FF6A415}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EC46A86-CA25-4CDC-86E9-FC6F0FF6A415}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EC46A86-CA25-4CDC-86E9-FC6F0FF6A415}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64DEE75A-5F83-4420-A26D-0ED1A40DCD83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64DEE75A-5F83-4420-A26D-0ED1A40DCD83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64DEE75A-5F83-4420-A26D-0ED1A40DCD83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64DEE75A-5F83-4420-A26D-0ED1A40DCD83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A213C47-DCE3-4D07-893C-19384ACA3B33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A213C47-DCE3-4D07-893C-19384ACA3B33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A213C47-DCE3-4D07-893C-19384ACA3B33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A213C47-DCE3-4D07-893C-19384ACA3B33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA552E52-434A-4085-87C2-D84E5B885760}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA552E52-434A-4085-87C2-D84E5B885760}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA552E52-434A-4085-87C2-D84E5B885760}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA552E52-434A-4085-87C2-D84E5B885760}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,6 +83,7 @@ Global
 		{F646F990-D1A9-48D4-9A3E-8ADCFB9A861A} = {EE5A8ABC-CA71-4BE3-A506-8A76643404A8}
 		{7A09DFDC-0CE4-48C0-9102-37D02B34A42F} = {EE5A8ABC-CA71-4BE3-A506-8A76643404A8}
 		{446CA046-B6D3-4284-A0D0-0448EC3035D1} = {8207A1E5-E7D5-42E0-8C30-74E9EDFE1968}
+		{6EC46A86-CA25-4CDC-86E9-FC6F0FF6A415} = {8207A1E5-E7D5-42E0-8C30-74E9EDFE1968}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {36AD4910-E567-43A1-A9EE-8084CB27CF10}
