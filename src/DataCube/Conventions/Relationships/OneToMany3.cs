@@ -1,9 +1,16 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace School.OneToMany3
 {
+    public class StudentContext : DbContext
+    {
+        public DbSet<Student> Students { get; set; }
+        public DbSet<Grade> Grades { get; set; }
+    }
+
     public class Student
     {
         public int Id { get; set; }
