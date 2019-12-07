@@ -1,4 +1,5 @@
-﻿using System;
+﻿using School.Entities;
+using System;
 using System.Linq;
 
 namespace School
@@ -52,16 +53,16 @@ namespace School
             //}
 
             // delete
-            using (var context4 = new SchoolContext())
-            {
-                var std = context4.Students.First<Student>();
-                context4.Students.Remove(std);
+            //using (var context4 = new SchoolContext())
+            //{
+            //    var std = context4.Students.First<Student>();
+            //    context4.Students.Remove(std);
 
-                // or
-                // context4.Remove<Student>(std);
+            //    // or
+            //    // context4.Remove<Student>(std);
 
-                context4.SaveChanges();
-            }
+            //    context4.SaveChanges();
+            //}
 
             Console.ReadLine();
         }
