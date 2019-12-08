@@ -18,10 +18,18 @@
   - Connected Scenario
   - Disconnected Scenario
 
+### Installation from nuget
+
+  - ``` Install-Package Microsoft.EntityFrameworkCore.SqlServer ```
+  - ``` Install-Package Microsoft.EntityFrameworkCore.Design ```
+  - ``` Install-Package Microsoft.EntityFrameworkCore.Tools ```
 
 ### EF Core Subjects
 
-- Install
+
+  
+ 
+
 - Modeling
   - Including-Excluding Types
     - [NotMapped] or Ignore
@@ -41,6 +49,7 @@
       - .ValueGeneratedOnAddOrUpdate();
    - Required and Optional Properties
       - [Required] , .IsRequired()
+   - Shadow Properties
 - Data Seeding
 - Manage Database 
   - Migration
