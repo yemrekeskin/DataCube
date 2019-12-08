@@ -1,4 +1,5 @@
-﻿using School.Entities;
+﻿using Microsoft.EntityFrameworkCore;
+using School.Entities;
 using System;
 using System.Linq;
 
@@ -63,6 +64,29 @@ namespace School
 
             //    context4.SaveChanges();
             //}
+
+            using (var context = new SchoolContext())
+            {
+                var grade = new Grade()
+                {
+                    GradeName = "A",
+                    Section = "Description"
+                };
+                context.Grades.Add(grade);
+                context.SaveChanges();
+
+
+                var std = new Student()
+                {
+                    FirstName = "Bill",
+                    LastName = "Gates",
+                    GradeId = 1
+                };
+                
+                context.Entry(std).Property("LastUpdated").CurrentValue = DateTime.Now;
+                context.Entry(std).State = EntityState.Added;
+                context.SaveChanges();
+            }
 
             Console.ReadLine();
         }

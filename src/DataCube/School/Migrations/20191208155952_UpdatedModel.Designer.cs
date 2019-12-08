@@ -10,8 +10,8 @@ using School;
 namespace School.Migrations
 {
     [DbContext(typeof(SchoolContext))]
-    [Migration("20191206225533_addedGradeModel")]
-    partial class addedGradeModel
+    [Migration("20191208155952_UpdatedModel")]
+    partial class UpdatedModel
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
