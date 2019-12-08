@@ -1,20 +1,20 @@
 <img src="https://raw.githubusercontent.com/yemrekeskin/DataCube/master/cube.png" width="50" height="50"> 
 
-# DataCube
+# DataCube ==^^==
 
 ### EF Core Concepts
 
-- Approaches
+- **Approaches**
   - DatabaseFirst
   - CodeFirst
-- Relationships
+- **Relationships**
   - One-To-Many
   - One-To-One
   - Many-To-Many
-- Conventions
+- **Conventions**
   - Data Annotation
   - Fluent API
-- Scenarios
+- **Scenarios**
   - Connected Scenario
   - Disconnected Scenario
 
@@ -50,6 +50,7 @@
       - .HasIndex(b => b.x) - .IsUnique();
    - Inheritance
    - Backing Fields
+   - Keyless Entity Type
    - Value Conversions
       - Enums
       - Microsoft.EntityFrameworkCore.Storage.ValueConversion
@@ -60,10 +61,13 @@
   - Migration
     - Seperate Project
   - Migration Commands - PMC
+    - get-help entityframework
     - Add-Migration [MigrationName]
     - Remove-Migration
     - Update-Database
     - Drop-Database 
+    - Scaffold-DbContext 
+    - Script-Migration
   - Scaffolding 
     - Generate entities from existing database
   
@@ -73,6 +77,7 @@
 - [https://www.learnentityframeworkcore.com](https://www.learnentityframeworkcore.com/)
 - [https://entityframeworkcore.com](https://entityframeworkcore.com/)
 - [https://www.entityframeworktutorial.net](https://www.entityframeworktutorial.net/efcore/entity-framework-core.aspx)
+- [https://entityframework-plus.net/](https://entityframework-plus.net)
 
 ## Contribution
 Pull requests are welcome, but make sure you sign the Contributor License Agreement.
