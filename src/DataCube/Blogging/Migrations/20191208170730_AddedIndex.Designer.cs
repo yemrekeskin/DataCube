@@ -4,14 +4,16 @@ using Blogging;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Blogging.Migrations
 {
     [DbContext(typeof(BloggingContext))]
-    partial class BloggingContextModelSnapshot : ModelSnapshot
+    [Migration("20191208170730_AddedIndex")]
+    partial class AddedIndex
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -31,9 +33,6 @@ namespace Blogging.Migrations
                     b.Property<DateTime>("LastUpdated")
                         .ValueGeneratedOnAddOrUpdate()
                         .HasColumnType("datetime2");
-
-                    b.Property<string>("Test")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<byte[]>("Timestamp")
                         .IsConcurrencyToken()
@@ -63,10 +62,6 @@ namespace Blogging.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Content")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("PostType")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Title")
