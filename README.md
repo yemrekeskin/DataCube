@@ -2,6 +2,8 @@
 
 # DataCube ==^^==
 
+This project contains use-cases exercises and concepts about EntityFrameworkCore. **DataCube** is data access layer solution that is fast and reliable for the .NET platform.
+
 ### EF Core Concepts
 
 - **Approaches**
