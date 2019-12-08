@@ -72,16 +72,16 @@
     - Generate entities from existing database
   
   
-## Useful Links
+## Useful Links 💥
 - [https://docs.microsoft.com/en-us/ef/core](https://docs.microsoft.com/en-us/ef/core/)
 - [https://www.learnentityframeworkcore.com](https://www.learnentityframeworkcore.com/)
 - [https://entityframeworkcore.com](https://entityframeworkcore.com/)
 - [https://www.entityframeworktutorial.net](https://www.entityframeworktutorial.net/efcore/entity-framework-core.aspx)
 - [https://entityframework-plus.net/](https://entityframework-plus.net)
 
-## Contribution
+## Contribution 💪
 Pull requests are welcome, but make sure you sign the Contributor License Agreement.
 
 ## License
 
-SwiftRefData is licensed under the MIT license. Check the [LICENSE](LICENSE) file for details.
+DataCube is licensed under the MIT license. Check the [LICENSE](LICENSE) file for details.
