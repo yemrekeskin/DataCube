@@ -26,11 +26,7 @@
 
 ### EF Core Subjects
 
-
-  
- 
-
-- Modeling
+- **Modeling**
   - Including-Excluding Types
     - [NotMapped] or Ignore
   - Including-Excluding Properties
@@ -50,10 +46,24 @@
    - Required and Optional Properties
       - [Required] , .IsRequired()
    - Shadow Properties
-- Data Seeding
-- Manage Database 
+   - Index
+      - .HasIndex(b => b.x) - .IsUnique();
+   - Inheritance
+   - Backing Fields
+   - Value Conversions
+      - Enums
+      - Microsoft.EntityFrameworkCore.Storage.ValueConversion
+      - .HasConversion(converter);
+      - [Column(TypeName = "nvarchar(24)")]
+- **Data Seeding**
+- **Manage Database** 
   - Migration
-     - Seperate Project
+    - Seperate Project
+  - Migration Commands - PMC
+    - Add-Migration [MigrationName]
+    - Remove-Migration
+    - Update-Database
+    - Drop-Database 
   - Scaffolding 
     - Generate entities from existing database
   
